@@ -11,7 +11,7 @@ export default function Register() {
   const invalidEmailInputRef = useRef(null);
   const invalidConfirmRef = useRef(null);
   const invalidConfirmInputRef = useRef(null);
-  const [newUser, setNewUser] = useState('');
+  const [newUser, setNewUser] = useState(null);
   const [confirm, setConfirm] = useState('');
   const [email, setEmail] = useState('');
   const [firstName, setFirstName] = useState('');

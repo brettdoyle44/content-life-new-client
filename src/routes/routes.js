@@ -6,13 +6,13 @@ import App from '../App';
 // import Signup from '../components/Signup';
 // import Analytics from '../pages/Analytics';
 import Ideas from '../pages/Ideas';
-// import Storyboards from '../pages/Storyboards';
-// import Calendar from '../pages/Calendar';
+import Storyboards from '../pages/Storyboards';
+import Calendar from '../pages/Calendar';
 import AddIdea from '../components/ideas/AddIdea';
 import Idea from '../components/ideas/Idea';
 import EditIdea from '../components//ideas/EditIdea';
 // import EditEvent from '../components/EditEvent';
-// import Storyboard from '../components/Storyboard';
+import Storyboard from '../components/storyboards/Storyboard';
 
 export default function Routes() {
   const { store } = useContext(Context);
@@ -29,11 +29,14 @@ export default function Routes() {
       <PrivateRoute exact path="/addidea" component={AddIdea} />
       <PrivateRoute exact path="/ideas/:id" component={Idea} />
       <PrivateRoute exact path="/ideas/:id/edit" component={EditIdea} />
-      {/* <PrivateRoute exact path="/storyboard" component={Storyboards} />
-      <PrivateRoute exact path="/calendar" component={Calendar} />
-
-
+      <PrivateRoute exact path="/storyboard" component={Storyboards} />
       <PrivateRoute exact path="/storyboard/:id" component={Storyboard} />
+      <PrivateRoute exact path="/calendar" component={Calendar} />
+      {/* 
+      
+
+
+      
       <PrivateRoute exact path="/events/:id" component={EditEvent} /> */}
       <Route
         exact

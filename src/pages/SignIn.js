@@ -54,7 +54,7 @@ export default function SignIn() {
         <input
           className="btn btn-primary btn-block"
           type="submit"
-          value="Sign up"
+          value="Sign In"
         />
         <button className="btn btn-primary mt-10" onClick={handleAuthToggle}>
           Register

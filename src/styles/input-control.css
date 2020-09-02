@@ -1,0 +1,32 @@
+.input-control {
+  font-size: 1.15em;
+  color: #343a40;
+  font-family: inherit;
+  padding: 1em;
+  resize: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 0.9em;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.input-control::placeholder {
+  color: #e7e7e7;
+  font-weight: 300;
+}
+
+.add-scene svg {
+  color: #d2d2d2;
+}
+
+.add-scene:hover {
+  color: #4f9da6;
+  border-color: #4f9da6;
+  cursor: pointer;
+}
+
+.add-scene:hover svg {
+  color: #4f9da6;
+}
